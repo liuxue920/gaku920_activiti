@@ -3,12 +3,12 @@ server:
 
 spring:
  main:
-  allow-bean-definition-overriding: false #当遇到同样名字的时候，是否允许覆盖注册
+  allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
  datasource:
   driver-class-name: com.mysql.jdbc.Driver
   username: root
   password:  mysql_p@ssw0rd
-  url: jdbc:mysql://123.57.176.149:3306/fafamc_dev?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+  url: jdbc:mysql://123.57.176.149:3306/activiti6ui?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
  activiti:
   database-schema-update: true
   #自动部署验证设置:true-开启（默认）、false-关闭
